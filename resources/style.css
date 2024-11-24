@@ -68,7 +68,7 @@ main h2 {
     font-size: 2rem;
     margin-top: 30px;
     color: #444;
-    text-align: center;
+    text-align: left;
 }
 
 hr {
@@ -76,7 +76,7 @@ hr {
     border: none;
     height: 1px;
     background-color: #ddd;
-    width: 80%;
+    width: 100%;
 }
 
 /* About Me Section */
