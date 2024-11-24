@@ -150,6 +150,12 @@ footer p {
         font-size: 0.9rem;
     }
 
+    #about-me-container img {
+    width: 300px;
+    border-radius: 10px;
+    }
+
+
 
     #about-me-container p {
         font-size: 0.9rem;
@@ -168,6 +174,11 @@ footer p {
     #about-me-container p {
         text-align: left;
     }
+    #about-me-container img {
+    width: 300px;
+    border-radius: 10px;
+    }
+
 
     ul {
         padding: 0 10px;
