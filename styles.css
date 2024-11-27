@@ -1,0 +1,84 @@
+/* global settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body html{
+    width: 100vh;
+    height: auto;
+}
+
+body{
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+hr{
+    margin: 1em auto;
+    width: 25%;
+    height: 0.1em;
+    border-color: black;
+    
+}
+
+/* container settings */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* header settings */
+
+#header{
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+#header li{
+    display: inline;
+    margin:0 1em;
+}
+
+#header ul{
+    padding: 1em 0;
+}
+
+#header li a{
+    background-color: black;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+}
+
+#header li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* info settings */
+
+.info, #about-me{
+    text-align: center
+}
+    
+#certification ul li{
+    font-weight:bold;
+}
+
+/* footer settings */
+#footer{
+    text-align: center;
+}
+
+
+
+
+
