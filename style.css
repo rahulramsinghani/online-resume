@@ -1,0 +1,519 @@
+/* global settings */
+:root {
+  --font-size-xxs: 0.625rem; /* 10px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-xxl: 1.75rem; /* 28px */
+  --font-size-xxxl: 2rem; /* 32px */
+  --font-size-huge: 3rem; /* 48px */
+  --font-size-massive: 4rem; /* 64px */
+}
+
+/* default colors */
+/* black #18181b  */
+
+/* font families */
+/* font-family: "Inter", serif;
+font-family: "Montserrat", serif;
+font-family: "Open Sans", serif;
+font-family: "Poppins", serif;
+ */
+
+/* default starting cleanup */
+
+* {
+  margin: 0; /*removing default margins*/
+  padding: 0; /*removing default paddings*/
+  list-style: none; /*removing defauly list style*/
+  text-decoration: none; /*removing default text decorations especially for links*/
+  box-sizing: border-box; /*making sure border is included inside the elements width*/
+  line-height: 1.7;
+}
+
+/* default html settings */
+a,
+li,
+p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", serif;
+}
+
+html {
+  font-family: "Inter", serif;
+  background-color: #fefefe;
+  color: black;
+}
+
+/* Base font for all devices */
+html {
+  font-size: 16px;
+  width: 100vw;
+}
+
+/* body settings */
+body {
+  width: 100%;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+/* header settings */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
+  width: 86%;
+}
+
+header h1 {
+  max-width: 500px;
+  font-size: var(--font-size-huge);
+  letter-spacing: -3px;
+}
+
+.status-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-container {
+  display: flex;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 10px 20px;
+
+  width: fit-content;
+  align-self: center;
+}
+
+.status-container img {
+  max-width: 50px;
+}
+
+.status-contact {
+  display: flex;
+  padding: 5px 10px;
+  gap: 5px;
+  height: fit-content;
+  font-size: var(--font-size-xs);
+  text-transform: capitalize;
+  line-height: 1.7;
+  align-self: center;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.status-contact:link {
+  color: #38bdf8;
+  border: 1px solid black;
+}
+
+.status-contact:visited {
+  color: #38bdf8;
+  border: 1px solid black;
+}
+
+.status-contact:hover {
+  background-color: #00000025;
+  color: #18181b;
+  .status-icon {
+    color: #84cc16;
+  }
+}
+
+.status-icon {
+  color: #84cc16;
+  font-size: var(--font-size-xs);
+}
+
+.nav-list {
+  display: flex;
+  border: 1px solid black;
+}
+
+.a1,
+.a2,
+.a3 {
+  padding: 5px 10px;
+  text-decoration: none;
+  h3 {
+    text-transform: uppercase;
+    font-size: var(--font-size-xs);
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: var(--font-size-xl);
+    letter-spacing: -1px;
+  }
+}
+
+.a1:link,
+.a2:link {
+  border-right: 1px solid black;
+  h3 {
+    color: #4ade80;
+  }
+  h2 {
+    color: black;
+  }
+}
+
+.a1:visited,
+.a2:visited {
+  border-right: 1px solid black;
+  h3 {
+    color: #4ade80;
+  }
+  h2 {
+    color: black;
+  }
+}
+
+.a3:link {
+  h3 {
+    color: #38bdf8;
+  }
+  h2 {
+    color: black;
+  }
+}
+
+.a3:visited {
+  h3 {
+    color: #38bdf8;
+  }
+  h2 {
+    color: black;
+  }
+}
+
+.a1:hover {
+  background-color: #00000025;
+  h2 {
+    color: #18181b;
+  }
+}
+
+.a2:hover {
+  background-color: #00000025;
+  h2 {
+    color: #18181b;
+  }
+}
+
+.a3:hover {
+  background-color: #00000025;
+  h2 {
+    color: #18181b;
+  }
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 100px;
+  margin-top: 100px;
+}
+
+.education {
+  display: grid;
+  grid-area: 1/1/5/11;
+  grid-template-columns: subgrid;
+}
+
+.education h2 {
+  font-size: var(--font-size-xxxl);
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.school h5 {
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  letter-spacing: 3px;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+}
+
+.school1 {
+  display: flex;
+  flex-direction: column;
+  grid-area: 2/1/4/6;
+  padding: 20px;
+  margin-left: 20px;
+  border: 1px solid black;
+  height: fit-content;
+  z-index: 1;
+}
+
+.school2 {
+  display: flex;
+  flex-direction: column;
+  grid-area: 3/5/5/11;
+  padding: 20px;
+  border: 1px solid black;
+  height: fit-content;
+  z-index: 2;
+  background-color: white;
+}
+
+.school3 {
+  display: flex;
+  flex-direction: column;
+  grid-area: 4/1/5/6;
+  padding: 20px;
+  border: 1px solid black;
+  height: fit-content;
+  z-index: 1;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.experience {
+  display: flex;
+  grid-area: 6/1/14/11;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  margin-left: 20px;
+  max-width: 500px;
+}
+
+.experience h2 {
+  font-size: var(--font-size-xxxl);
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work h5 {
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  letter-spacing: 3px;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+}
+
+.work1 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: fit-content;
+  padding: 20px;
+}
+
+.work2 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  border: 1px solid black;
+  height: fit-content;
+}
+
+.work3 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  height: fit-content;
+}
+
+.certifications {
+  grid-area: 5/7/13/11;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.certifications h2 {
+  font-size: var(--font-size-xxxl);
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.certificates {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.certificates li {
+  margin-bottom: 10px;
+}
+
+.certificates li:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+/* Larger screens (desktops) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px; /* Slightly larger for readability */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  html {
+    font-size: 16px; /* Standard size */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .status-nav {
+    order: -1;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header h1 {
+    max-width: 100%;
+  }
+
+  .body-container {
+    max-width: 750px;
+  }
+
+  main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .school {
+    max-width: 350px;
+  }
+
+  .experience {
+    max-width: 350px;
+  }
+  .certifications {
+    grid-area: 5/7/13/12;
+  }
+}
+
+/* Smaller screens (mobile devices) */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px; /* Smaller size for compact screens */
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .status-nav {
+    order: -1;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .status-container {
+    align-self: flex-start;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .education {
+    gap: 10px;
+  }
+
+  header h1 {
+    max-width: 100%;
+  }
+
+  .body-container {
+    max-width: 480px;
+  }
+
+  .school {
+    max-width: 100%;
+  }
+
+  .experience h2,
+  .education h2,
+  .certifications h2 {
+    margin-bottom: 0;
+  }
+
+  .experience {
+    max-width: 100%;
+    gap: 10px;
+  }
+  .certifications {
+    max-width: 50%;
+    gap: 10px;
+  }
+}
+
+/* Extra small screens (very small devices) */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* Reduced for very small screens */
+  }
+
+  .body-container {
+    max-width: 350px;
+  }
+
+  .certifications {
+    max-width: 100%;
+  }
+}
